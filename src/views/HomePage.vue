@@ -20,7 +20,7 @@
 
 <style scoped>
 .home-container {
-  min-height: calc(100vh - 60px);
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,6 +29,7 @@
   padding: 0;
   width: 100%;
   box-sizing: border-box;
+  margin-top: 60px;
 }
 
 .content {
