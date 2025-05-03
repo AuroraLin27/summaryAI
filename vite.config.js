@@ -38,5 +38,8 @@ export default defineConfig({
         rewrite: (path) => path.replace(/^\/api\/baidu/, '')
       }
     }
+  },
+  build:{
+    chunkSizeWarningLimit:1600
   }
 })
