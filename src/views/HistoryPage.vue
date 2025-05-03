@@ -113,7 +113,6 @@ const handleClearHistory = () => {
           :key="record.id"
           class="history-card"
           shadow="hover"
-          v-infinite-scroll="load"
         >
           <template #header>
             <div class="card-header">

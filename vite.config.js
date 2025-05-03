@@ -11,6 +11,10 @@ import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 
 // https://vite.dev/config/
 export default defineConfig({
+  esbuild:{
+    //打包去除console和debugger代码
+    drop:["console", "debugger"]
+  },
   plugins: [
     vue(),
     vueDevTools(),
