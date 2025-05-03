@@ -30,7 +30,8 @@ const copyToClipboard = async () => {
     <div class="card-header">
       <h2>AI 总结结果</h2>
       <el-button
-        type="text"
+        type="primary"
+        link
         class="copy-button"
         @click="copyToClipboard"
       >

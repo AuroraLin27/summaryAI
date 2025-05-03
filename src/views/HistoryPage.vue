@@ -88,14 +88,14 @@ const handleClearHistory = () => {
               <el-icon><Search /></el-icon>
             </template>
           </el-input>
-          <el-button
-            type="danger"
-            plain
-            @click="handleClearHistory"
-            :disabled="!historyList.length"
-          >
-            清空历史
-          </el-button>
+        <el-button
+          type="danger"
+          plain
+          @click="handleClearHistory"
+          :disabled="!historyList.length"
+        >
+          清空历史
+        </el-button>
         </div>
       </div>
 
