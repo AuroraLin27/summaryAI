@@ -26,9 +26,11 @@ html, body {
 }
 
 #app {
+  /* 根容器占满宽度 */
   width: 100%;
   min-height: 100vh;
   display: flex;
+  /* 垂直排列 */
   flex-direction: column;
 }
 </style>

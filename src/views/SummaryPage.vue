@@ -17,9 +17,7 @@ const handleSubmit = async (data) => {
     error.value = ''
     showResult.value = false
     summaryResult.value = ''
-    // loading.value = true
-    // ElMessage.info('正在生成摘要，请稍候...')
-    //检查输入文本长度
+
     if(data.text.length > 3000) {
       error.value = '输入文本超过3000字限制'
       ElMessage.error(error.value)
@@ -28,7 +26,6 @@ const handleSubmit = async (data) => {
 
     loading.value = true
     ElMessage.info('正在生成摘要，请稍后...')
-
 
     const result = await generateSummary(data.text, data.maxLength)
     summaryResult.value = result || ''
@@ -55,14 +52,6 @@ const handleSubmit = async (data) => {
           :show="showResult"
         />
       </div>
-      <!-- <el-alert
-        v-if="error"
-        :title="error"
-        type="error"
-        show-icon
-        :closable="true"
-        @close="error = ''"
-      /> -->
     </div>
   </div>
 </template>
@@ -105,4 +94,4 @@ const handleSubmit = async (data) => {
   font-size: 16px;
   margin-top: 10px;
 }
-</style>`
+</style>
