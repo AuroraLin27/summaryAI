@@ -7,6 +7,11 @@ import HeaderComponent from './components/HeaderComponent.vue';
   <div id="app">
     <HeaderComponent></HeaderComponent>
     <router-view></router-view>
+    <footer class="site-footer">
+      <a href="http://beian.miit.gov.cn/"   target="_blank" rel="noopener noreferrer">
+        粤ICP备2025474253号
+      </a>
+  </footer>
   </div>
 </template>
 
@@ -32,5 +37,14 @@ html, body {
   display: flex;
   /* 垂直排列 */
   flex-direction: column;
+}
+.site-footer {
+  background-color: #f0768b;
+  height: 20px;
+  text-align: center;
+  font-size: 12px;
+  a {
+    color: black;
+  }
 }
 </style>

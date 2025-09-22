@@ -1,6 +1,4 @@
-<script setup>
-// 组件逻辑
-</script>
+<script setup></script>
 
 <template>
   <div class="home-container">
@@ -20,15 +18,17 @@
 
 <style scoped>
 .home-container {
-  min-height: 100vh;
+  min-height: calc(100vh - 80px);
   display: flex;
   justify-content: center;
+  /* 只有一个content */
   align-items: center;
   background: linear-gradient( #ffe4e8 0%, #f0768b 100%);
   margin: 0;
   padding: 0;
   width: 100%;
   box-sizing: border-box;
+  /* 顶部导航 */
   margin-top: 60px;
 }
 
@@ -51,7 +51,7 @@
 .start-button {
   font-size: 1.2rem;
   font-weight: bold;
-  padding: 1.5rem 2rem;
+  padding: 1.7rem 2rem;
   background-color: #ffffff;
   color: #f0768b;
   border: none;
@@ -62,8 +62,6 @@
 .start-button:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
-  background-color: #ffffff;
-  color: #f0768b;
 }
 
 .start-button:active {

@@ -9,9 +9,7 @@ import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 
-// https://vite.dev/config/
 export default defineConfig({
-  envPrefix: 'VITE_', // 默认就是 VITE_，无需额外配置
   esbuild:{
     //打包去除console和debugger代码
     drop:["console", "debugger"]

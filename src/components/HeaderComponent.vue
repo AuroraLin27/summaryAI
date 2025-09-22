@@ -1,5 +1,4 @@
 <script setup>
-// 组件逻辑
 </script>
 
 <template>
@@ -28,8 +27,6 @@
 </template>
 
 <style scoped>
-
-
 :deep(.el-menu-item) {
   font-size: 16px;
   color: #ffffff !important;
@@ -49,10 +46,6 @@
 
 :deep(.el-menu--horizontal) {
   border-bottom: none;
-}
-
-:deep(.el-menu-item) {
-  font-size: 16px;
 }
 
 .header-container {

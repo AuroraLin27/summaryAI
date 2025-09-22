@@ -1,30 +1,36 @@
 <script setup>
-import { ref } from 'vue'
+// 导入
 import { Document } from '@element-plus/icons-vue'
 import { ElMessage } from 'element-plus'
 
+// 参数对象
+// 接收数据
 const props = defineProps({
   result: {
     type: String,
     default: ''
   },
+  // 显示开关
   show: {
     type: Boolean,
     default: false
   }
 })
 
+// 方法
+// 剪贴板
 const copyToClipboard = async () => {
   if (!props.result) return
-
   try {
     await navigator.clipboard.writeText(props.result)
     ElMessage.success('复制成功！')
   } catch (err) {
+    console.error(err.message)
     ElMessage.error('复制失败，请手动复制')
   }
 }
 </script>
+
 <template>
   <div class="result-card" v-if="show && result">
     <div class="card-header">
